@@ -57,7 +57,7 @@ const FavoriteCharactersSideBar = ({
             <DrawerHeader>
                 <Typography textAlign="left" component="span" className={classes.titleWithIcon}>
                     Favorite Characters{!!favorites.length && `: ${favorites.length}`}
-                    <img src={chewbacca} className={classes.smallIcon} />
+                    <img alt="chewbacca-icon" src={chewbacca} className={classes.smallIcon} />
                 </Typography>
                 <IconButton onClick={handleDrawerClose}>
                     {theme.direction === 'ltr' ? <ChevronLeft /> : <ChevronRight />}

@@ -8,6 +8,9 @@ const CharacterCard = ({ character }) => (
                 <b>Name:</b> {character.name}
             </Typography>
             <Typography variant="h6" component="h2">
+                <b>Birthday year:</b> {character.birth_year}
+            </Typography>
+            <Typography variant="h6" component="h2">
                 <b>Species:</b> {character.species.join(', ')}
             </Typography>
             <Typography variant="h6" component="h2">

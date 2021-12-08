@@ -120,8 +120,8 @@ const FilterControls = ({ films, species, characters, filterCharacters }) => {
     }, [filmsFilter, speciesFilter, fromBirthday, toBirthday, filterCondition, fromBirthdayValue, toBirthdayValue, includeUnknown]);
 
     useEffect(() => {
-        if ((fromBirthday === BBY && fromBirthday === toBirthday && fromBirthdayValue < toBirthdayValue)
-            || (fromBirthday === ABY && fromBirthday === toBirthday && fromBirthdayValue > toBirthdayValue)
+        if ((fromBirthday === BBY && fromBirthday === toBirthday && +fromBirthdayValue < +toBirthdayValue)
+            || (fromBirthday === ABY && fromBirthday === toBirthday && +fromBirthdayValue > +toBirthdayValue)
         ) setTimeRangeError(true)
         else setTimeRangeError(false);
     }, [fromBirthday, toBirthday, filterCondition, fromBirthdayValue, toBirthdayValue]);
